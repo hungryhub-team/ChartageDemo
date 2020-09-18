@@ -1,0 +1,11 @@
+{
+  "commitish" : "1.3.0",
+  "iOS" : [
+    {
+      "hash" : "ed2e694b0486cf95fc683d2ff1d26e80c64403e9f3dfeada82cfb5e6e3665fae",
+      "name" : "KRPullLoader",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ]
+}

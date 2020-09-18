@@ -1,0 +1,11 @@
+{
+  "commitish" : "6.1.0",
+  "iOS" : [
+    {
+      "hash" : "a89892626d333c1a096372b9ea9a9a7222cc1a2c0b8ab8038a8d21a3ad48e907",
+      "name" : "IBAnimatable",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ]
+}

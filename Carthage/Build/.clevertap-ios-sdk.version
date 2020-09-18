@@ -1,0 +1,10 @@
+{
+  "commitish" : "3.9.0",
+  "iOS" : [
+    {
+      "name" : "CleverTapSDK",
+      "hash" : "f651041b16fef21f7b1da101a16343e94fb5e9fe0ea83bc2e889cb0e4ccdb9e0",
+      "linking" : "dynamic"
+    }
+  ]
+}

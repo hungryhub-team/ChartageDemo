@@ -1,0 +1,39 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "6.32.0",
+  "iOS" : [
+    {
+      "name" : "GoogleToolboxForMac",
+      "hash" : "ad2b9314c39d525d6ed0af2ba2253cc55395c6cd54258605f561ea9a741c9740",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "GTMSessionFetcher",
+      "hash" : "0721d034e100a9d9d71daba9046f6c1bd9be1009ab9aaae646978cd90d8093eb",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "GoogleAPIClientForREST",
+      "hash" : "80cb0869b45a81d950a28a6aab1ae983d4f182d7be4ad6c205c1cca42ce1125a",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "FirebaseMLVision",
+      "hash" : "0662157635e03b32305b83ad3988e8d6d8edda67c0439cfdf31547e1f6193837",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "FirebaseMLCommon",
+      "hash" : "a241391fc340bedf200d99fe46164e319e10a591607b25581c27fe70f9086b91",
+      "linking" : "dynamic"
+    }
+  ]
+}

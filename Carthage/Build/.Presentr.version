@@ -1,0 +1,11 @@
+{
+  "commitish" : "1.9",
+  "iOS" : [
+    {
+      "hash" : "a4a972f34f87a33789691d9825984f772a1e3af351216dd2d5ffff7855acd190",
+      "name" : "Presentr",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ]
+}

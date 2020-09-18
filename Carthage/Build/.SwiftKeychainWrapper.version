@@ -1,0 +1,11 @@
+{
+  "commitish" : "3.4.0",
+  "iOS" : [
+    {
+      "hash" : "f0b1db3eb7a6251988b00486c6d3c7bcd556216d9b8afd4681d75c6434bad1d6",
+      "name" : "SwiftKeychainWrapper",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ]
+}

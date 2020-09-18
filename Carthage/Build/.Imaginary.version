@@ -1,0 +1,30 @@
+{
+  "Mac" : [
+    {
+      "hash" : "d7fc35494be878fdf01981cdc76bce06c4bcce35c8d61f4aa2b790f9392a0057",
+      "name" : "Imaginary",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+    {
+      "hash" : "538a21f5fb8477c5f853cd0882ff5beb578e7a0a26e22b3a57d33a1ff313fc1a",
+      "name" : "Imaginary",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ],
+  "commitish" : "4.3.1",
+  "iOS" : [
+    {
+      "hash" : "2d83b61cc0ef02945a4ac003944d44681c3174977df8448eda335d441a5b3d21",
+      "name" : "Imaginary",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ]
+}

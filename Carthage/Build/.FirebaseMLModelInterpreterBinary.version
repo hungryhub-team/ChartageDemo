@@ -1,0 +1,44 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "6.32.0",
+  "iOS" : [
+    {
+      "name" : "TensorFlowLiteObjC",
+      "hash" : "ed0b21b1791b4a83a80c68fc86aa4db8c56f6ba3b4c0fc682dfd6be43c567fb8",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "GoogleToolboxForMac",
+      "hash" : "ad2b9314c39d525d6ed0af2ba2253cc55395c6cd54258605f561ea9a741c9740",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "FirebaseMLModelInterpreter",
+      "hash" : "68273755eae602be354b5afc662b36eacfdf1e945d39fbe9a4c86d44b7741fb8",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "GTMSessionFetcher",
+      "hash" : "0721d034e100a9d9d71daba9046f6c1bd9be1009ab9aaae646978cd90d8093eb",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "FirebaseMLCommon",
+      "hash" : "a241391fc340bedf200d99fe46164e319e10a591607b25581c27fe70f9086b91",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "TensorFlowLiteC",
+      "hash" : "d8b66e67dda5da5a887e3ecd6a838888a38ec59881dadd4a0d5ff67092f1343c",
+      "linking" : "dynamic"
+    }
+  ]
+}

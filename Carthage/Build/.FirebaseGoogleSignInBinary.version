@@ -1,0 +1,34 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "6.32.0",
+  "iOS" : [
+    {
+      "name" : "GTMAppAuth",
+      "hash" : "d414b8f22d983d0144df70e7ca3e31ef5b856fdade699f777327dfd6e1992ca9",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "GTMSessionFetcher",
+      "hash" : "0721d034e100a9d9d71daba9046f6c1bd9be1009ab9aaae646978cd90d8093eb",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "AppAuth",
+      "hash" : "e8b43ec45ce1e78dac874abd9239bfac5a2a9139de12948594622c2323876b9f",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "GoogleSignIn",
+      "hash" : "e93c597d817d3605f4972edd3c8a942677bde1eb0d8cb98d80493fd54d9810fe",
+      "linking" : "dynamic"
+    }
+  ]
+}

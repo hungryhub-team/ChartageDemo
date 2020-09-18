@@ -1,0 +1,4 @@
+framework module Imaginary {
+  header "Imaginary-Swift.h"
+  requires objc
+}

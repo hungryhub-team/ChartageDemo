@@ -1,0 +1,11 @@
+{
+  "commitish" : "2.0.4",
+  "iOS" : [
+    {
+      "hash" : "6add683f4d5894c71241715a267419152d7c5a20d413d08673b32a612f257017",
+      "name" : "EasyTipView",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ]
+}

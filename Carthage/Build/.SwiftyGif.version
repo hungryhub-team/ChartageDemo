@@ -1,0 +1,11 @@
+{
+  "commitish" : "5.3.0",
+  "iOS" : [
+    {
+      "hash" : "f880ee9f5adea01006397fabf50b78d88f5d9fc1d0e843d01db6910b49002b4f",
+      "name" : "SwiftyGif",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ]
+}

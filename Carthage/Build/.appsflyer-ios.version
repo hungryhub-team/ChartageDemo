@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "6.0.3",
+  "iOS" : [
+    {
+      "name" : "AppsFlyerLib",
+      "hash" : "409e99a5107f09aea46f80e15b06cbf96ca880072aa2da846a3e25daedb1f803",
+      "linking" : "dynamic"
+    }
+  ]
+}

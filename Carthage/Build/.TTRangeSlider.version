@@ -1,0 +1,15 @@
+{
+  "commitish" : "v1.0.6",
+  "iOS" : [
+    {
+      "name" : "Pods",
+      "hash" : "37bbb0cefe5c0de6474a46b95bd6733994f77271491ae4c8afb0b54227f92662",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "TTRangeSlider",
+      "hash" : "eff695f332de810b54ef3016faac055e937d606ec02969c78f28a923f7e4a2cd",
+      "linking" : "dynamic"
+    }
+  ]
+}

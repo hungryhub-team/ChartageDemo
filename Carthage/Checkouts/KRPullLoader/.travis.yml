@@ -1,0 +1,10 @@
+language: objective-c
+osx_image: xcode10.2
+xcode_sdk: iphonesimulator12.2
+install:
+- gem install xcpretty
+script:
+  - set -o pipefail
+  - travis_retry xcodebuild -project KRPullLoader.xcodeproj -scheme KRPullLoader -destination "platform=iOS Simulator,name=iPhone Xs" build-for-testing test | xcpretty
+notifications:
+  email: false

@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "3.10.0",
+  "iOS" : [
+    {
+      "name" : "GooglePlaces",
+      "hash" : "5d217fced9230ff0220b8a7191aa7581f1aa6fc3bd8f75f0ed5842fdc1c37c6f",
+      "linking" : "dynamic"
+    }
+  ]
+}

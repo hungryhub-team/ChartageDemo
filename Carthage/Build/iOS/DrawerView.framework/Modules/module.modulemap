@@ -1,0 +1,11 @@
+framework module DrawerView {
+  umbrella header "DrawerView.h"
+
+  export *
+  module * { export * }
+}
+
+module DrawerView.Swift {
+    header "DrawerView-Swift.h"
+    requires objc
+}

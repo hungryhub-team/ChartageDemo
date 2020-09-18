@@ -1,0 +1,34 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "3.10.0",
+  "iOS" : [
+    {
+      "name" : "GoogleMapsM4B",
+      "hash" : "780bc4e295f5d2adba95756a10f9c0cbbd5e3908f7142ef4ce7c81745d1f9fdb",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "GoogleMaps",
+      "hash" : "87a19f3ade1a24cc17b9c943952326b3b237b6205265054da33350311946dc0f",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "GoogleMapsBase",
+      "hash" : "19884971db68d9d66ef45134fed7890b27200153c90e69022db54e1d6549b57d",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "GoogleMapsCore",
+      "hash" : "42eb96fd4a53f638f56befc6422cf6d07165d9d1e8569c934bf63a17c583a77d",
+      "linking" : "dynamic"
+    }
+  ]
+}

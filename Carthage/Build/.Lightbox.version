@@ -1,0 +1,11 @@
+{
+  "commitish" : "2.4.2",
+  "iOS" : [
+    {
+      "hash" : "c7b4252649e66e871266748f02ab6d5e07b32c55d405287790194f2571b3ea85",
+      "name" : "Lightbox",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ]
+}

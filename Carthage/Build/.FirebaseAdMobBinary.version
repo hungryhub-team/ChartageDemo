@@ -1,0 +1,24 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "6.32.0",
+  "iOS" : [
+    {
+      "name" : "UserMessagingPlatform",
+      "hash" : "499a90576c5d1a75aaaa29bd40eb535322c9df2c6ea6cb9a9ce0e6c83efc7ffa",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "GoogleMobileAds",
+      "hash" : "e43d9f26875cd8205b1d4d8f18da85c27ac7be4eb4791fd8483de180ba2d5f24",
+      "linking" : "dynamic"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "commitish" : "2.8.1",
+  "iOS" : [
+    {
+      "name" : "FSCalendar",
+      "hash" : "df5cde545f654f9a4c6ec7bd432ca84d3f8629974e841d6ea7d328c5eede39a8",
+      "linking" : "dynamic"
+    }
+  ]
+}

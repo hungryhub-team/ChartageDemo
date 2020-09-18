@@ -1,0 +1,23 @@
+{
+  "commitish" : "1.2.9",
+  "iOS" : [
+    {
+      "hash" : "8403d2699d6fc1e987b02bcdd32fc9cdc96a0042fa8d5ad86909478500c4a898",
+      "name" : "SKCountryPicker",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    },
+    {
+      "hash" : "0aca65a1791786fffddbce8d0fdd0c197dfc5d7ff635268174d2a45b6a816cce",
+      "name" : "CountryPicker",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    },
+    {
+      "hash" : "0aca65a1791786fffddbce8d0fdd0c197dfc5d7ff635268174d2a45b6a816cce",
+      "name" : "CountryPicker",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ]
+}

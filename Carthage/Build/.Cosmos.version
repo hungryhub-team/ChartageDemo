@@ -1,0 +1,11 @@
+{
+  "commitish" : "20.0.1",
+  "iOS" : [
+    {
+      "hash" : "465c8246970ffa38c306cd2636004392d7d1cce5cb2a6177a25967fd97867bbb",
+      "name" : "Cosmos",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ]
+}

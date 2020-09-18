@@ -1,0 +1,11 @@
+{
+  "commitish" : "5.3.0",
+  "iOS" : [
+    {
+      "hash" : "d8bd83795953513f0418ff61c42890743ecc5a15901d3530011c90f124cf4724",
+      "name" : "Cache",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ]
+}

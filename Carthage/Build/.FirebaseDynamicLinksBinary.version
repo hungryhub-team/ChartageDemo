@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "6.32.0",
+  "iOS" : [
+    {
+      "name" : "FirebaseDynamicLinks",
+      "hash" : "115ed44f6bc72521b783f75102b801ad4e19505bb8cea3fd66b9f18a56712283",
+      "linking" : "dynamic"
+    }
+  ]
+}

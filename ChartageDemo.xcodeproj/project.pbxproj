@@ -1,0 +1,952 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F349C8462513504700A7BC42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F349C8452513504700A7BC42 /* AppDelegate.swift */; };
+		F349C84C2513504B00A7BC42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F349C84B2513504B00A7BC42 /* Assets.xcassets */; };
+		F349C84F2513504B00A7BC42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F349C84E2513504B00A7BC42 /* Preview Assets.xcassets */; };
+		F349C8522513504B00A7BC42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F349C8502513504B00A7BC42 /* LaunchScreen.storyboard */; };
+		F349C85D2513504B00A7BC42 /* ChartageDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F349C85C2513504B00A7BC42 /* ChartageDemoTests.swift */; };
+		F349C8682513504B00A7BC42 /* ChartageDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F349C8672513504B00A7BC42 /* ChartageDemoUITests.swift */; };
+		F3713A2F2514545C007FDFB3 /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A2D25145458007FDFB3 /* IQKeyboardManager.framework */; };
+		F3713A302514545C007FDFB3 /* IQKeyboardManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A2D25145458007FDFB3 /* IQKeyboardManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A382514547B007FDFB3 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A3625145477007FDFB3 /* SDWebImage.framework */; };
+		F3713A392514547B007FDFB3 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A3625145477007FDFB3 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A3E251454F3007FDFB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3713A3D251454F3007FDFB3 /* Main.storyboard */; };
+		F3713A4025145509007FDFB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3713A3F25145509007FDFB3 /* ViewController.swift */; };
+		F3713A4125145784007FDFB3 /* SDWebImageMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A3A25145482007FDFB3 /* SDWebImageMapKit.framework */; };
+		F3713A4225145784007FDFB3 /* SDWebImageMapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A3A25145482007FDFB3 /* SDWebImageMapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A4525145A20007FDFB3 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A4325145A18007FDFB3 /* PromiseKit.framework */; };
+		F3713A4625145A20007FDFB3 /* PromiseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A4325145A18007FDFB3 /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A4925145B27007FDFB3 /* OmiseSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A4725145B1B007FDFB3 /* OmiseSDK.framework */; };
+		F3713A4A25145B27007FDFB3 /* OmiseSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A4725145B1B007FDFB3 /* OmiseSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A4D25146127007FDFB3 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A4B25146121007FDFB3 /* ObjectMapper.framework */; };
+		F3713A4E25146127007FDFB3 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A4B25146121007FDFB3 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A5125146324007FDFB3 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A4F2514631A007FDFB3 /* Kingfisher.framework */; };
+		F3713A5225146324007FDFB3 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A4F2514631A007FDFB3 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A552514648C007FDFB3 /* IBAnimatable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A5325146484007FDFB3 /* IBAnimatable.framework */; };
+		F3713A562514648C007FDFB3 /* IBAnimatable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A5325146484007FDFB3 /* IBAnimatable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A61251468F4007FDFB3 /* Cosmos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A5F251468EE007FDFB3 /* Cosmos.framework */; };
+		F3713A62251468F4007FDFB3 /* Cosmos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A5F251468EE007FDFB3 /* Cosmos.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A652514881F007FDFB3 /* KRPullLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A6325148818007FDFB3 /* KRPullLoader.framework */; };
+		F3713A662514881F007FDFB3 /* KRPullLoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A6325148818007FDFB3 /* KRPullLoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A6B25148C30007FDFB3 /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A6725148C10007FDFB3 /* NVActivityIndicatorView.framework */; };
+		F3713A6C25148C30007FDFB3 /* NVActivityIndicatorView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A6725148C10007FDFB3 /* NVActivityIndicatorView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A6F25148CBD007FDFB3 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A3225145468007FDFB3 /* IQKeyboardManagerSwift.framework */; };
+		F3713A7025148CBD007FDFB3 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A3225145468007FDFB3 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A7325149173007FDFB3 /* SwiftSoup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A712514916B007FDFB3 /* SwiftSoup.framework */; };
+		F3713A7425149173007FDFB3 /* SwiftSoup.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A712514916B007FDFB3 /* SwiftSoup.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A7625149214007FDFB3 /* ViewTwoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3713A7525149214007FDFB3 /* ViewTwoController.swift */; };
+		F3713A79251493AC007FDFB3 /* TagListView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A77251493A6007FDFB3 /* TagListView.framework */; };
+		F3713A7A251493AC007FDFB3 /* TagListView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A77251493A6007FDFB3 /* TagListView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A7D251496A7007FDFB3 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A7B25149699007FDFB3 /* FSCalendar.framework */; };
+		F3713A7E251496A7007FDFB3 /* FSCalendar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A7B25149699007FDFB3 /* FSCalendar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A8125149A59007FDFB3 /* AppsFlyerLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A7F25149A51007FDFB3 /* AppsFlyerLib.framework */; };
+		F3713A8525149E1E007FDFB3 /* TTRangeSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A8325149E13007FDFB3 /* TTRangeSlider.framework */; };
+		F3713A8625149E1E007FDFB3 /* TTRangeSlider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A8325149E13007FDFB3 /* TTRangeSlider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A8825149EFD007FDFB3 /* ViewThreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3713A8725149EFD007FDFB3 /* ViewThreeController.swift */; };
+		F3713A8B2514A226007FDFB3 /* DrawerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A892514A21B007FDFB3 /* DrawerView.framework */; };
+		F3713A8C2514A226007FDFB3 /* DrawerView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A892514A21B007FDFB3 /* DrawerView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A972514AA4B007FDFB3 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A952514AA47007FDFB3 /* SwiftyJSON.framework */; };
+		F3713A982514AA4B007FDFB3 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A952514AA47007FDFB3 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713A9B2514AE1A007FDFB3 /* SwiftKeychainWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A992514AE10007FDFB3 /* SwiftKeychainWrapper.framework */; };
+		F3713A9C2514AE1A007FDFB3 /* SwiftKeychainWrapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A992514AE10007FDFB3 /* SwiftKeychainWrapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713AAB2514B24D007FDFB3 /* CommonUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AA32514B209007FDFB3 /* CommonUISDK.framework */; };
+		F3713AAC2514B24D007FDFB3 /* CommonUISDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AA32514B209007FDFB3 /* CommonUISDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713AAD2514B255007FDFB3 /* MessagingAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AA72514B22A007FDFB3 /* MessagingAPI.framework */; };
+		F3713AAE2514B255007FDFB3 /* MessagingAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AA72514B22A007FDFB3 /* MessagingAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713AAF2514B257007FDFB3 /* MessagingSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AA52514B21C007FDFB3 /* MessagingSDK.framework */; };
+		F3713AB02514B257007FDFB3 /* MessagingSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AA52514B21C007FDFB3 /* MessagingSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713AB12514B26D007FDFB3 /* SDKConfigurations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AA92514B237007FDFB3 /* SDKConfigurations.framework */; };
+		F3713AB22514B26D007FDFB3 /* SDKConfigurations.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AA92514B237007FDFB3 /* SDKConfigurations.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713AB32514B2A2007FDFB3 /* SupportProvidersSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A9F2514B1DD007FDFB3 /* SupportProvidersSDK.framework */; };
+		F3713AB42514B2A2007FDFB3 /* SupportProvidersSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A9F2514B1DD007FDFB3 /* SupportProvidersSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713AB52514B2A9007FDFB3 /* SupportSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AA12514B1E9007FDFB3 /* SupportSDK.framework */; };
+		F3713AB62514B2A9007FDFB3 /* SupportSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AA12514B1E9007FDFB3 /* SupportSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713AB72514B2B5007FDFB3 /* ZendeskCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A9D2514B1CA007FDFB3 /* ZendeskCoreSDK.framework */; };
+		F3713AB82514B2B5007FDFB3 /* ZendeskCoreSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713A9D2514B1CA007FDFB3 /* ZendeskCoreSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713ABC2514B483007FDFB3 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713ABA2514B475007FDFB3 /* Bolts.framework */; };
+		F3713ABD2514B483007FDFB3 /* Bolts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713ABA2514B475007FDFB3 /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713AC02514B783007FDFB3 /* Presentr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713ABE2514B777007FDFB3 /* Presentr.framework */; };
+		F3713AC12514B783007FDFB3 /* Presentr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713ABE2514B777007FDFB3 /* Presentr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713AC42514B9D3007FDFB3 /* CountryPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AC22514B9BA007FDFB3 /* CountryPicker.framework */; };
+		F3713AC52514B9D3007FDFB3 /* CountryPicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AC22514B9BA007FDFB3 /* CountryPicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713AC82514BA73007FDFB3 /* EasyTipView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AC62514BA6A007FDFB3 /* EasyTipView.framework */; };
+		F3713AC92514BA73007FDFB3 /* EasyTipView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AC62514BA6A007FDFB3 /* EasyTipView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713ACC2514BDAE007FDFB3 /* CleverTapSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713ACA2514BD9A007FDFB3 /* CleverTapSDK.framework */; };
+		F3713ACD2514BDAE007FDFB3 /* CleverTapSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713ACA2514BD9A007FDFB3 /* CleverTapSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713ACF2514BDC1007FDFB3 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713ACE2514BDC0007FDFB3 /* SDWebImage.framework */; };
+		F3713ADE2514C16D007FDFB3 /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AD12514C163007FDFB3 /* FacebookCore.framework */; };
+		F3713ADF2514C16D007FDFB3 /* FacebookCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AD12514C163007FDFB3 /* FacebookCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713AE02514C16F007FDFB3 /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AD02514C163007FDFB3 /* FacebookLogin.framework */; };
+		F3713AE12514C16F007FDFB3 /* FacebookLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AD02514C163007FDFB3 /* FacebookLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713AE22514C172007FDFB3 /* FacebookShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AD32514C163007FDFB3 /* FacebookShare.framework */; };
+		F3713AE32514C172007FDFB3 /* FacebookShare.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AD32514C163007FDFB3 /* FacebookShare.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713AE42514C174007FDFB3 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AD52514C163007FDFB3 /* FBSDKCoreKit.framework */; };
+		F3713AE52514C174007FDFB3 /* FBSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AD52514C163007FDFB3 /* FBSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713AE62514C176007FDFB3 /* FBSDKPlacesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AD42514C163007FDFB3 /* FBSDKPlacesKit.framework */; };
+		F3713AE72514C176007FDFB3 /* FBSDKPlacesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AD42514C163007FDFB3 /* FBSDKPlacesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713AE82514C178007FDFB3 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AD62514C163007FDFB3 /* FBSDKLoginKit.framework */; };
+		F3713AE92514C178007FDFB3 /* FBSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AD62514C163007FDFB3 /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713AEA2514C17B007FDFB3 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AD22514C163007FDFB3 /* FBSDKShareKit.framework */; };
+		F3713AEB2514C17B007FDFB3 /* FBSDKShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AD22514C163007FDFB3 /* FBSDKShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713B182514C957007FDFB3 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AF32514C949007FDFB3 /* Firebase.framework */; };
+		F3713B192514C958007FDFB3 /* Firebase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AF32514C949007FDFB3 /* Firebase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713B1A2514C95A007FDFB3 /* FirebaseABTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AF22514C949007FDFB3 /* FirebaseABTesting.framework */; };
+		F3713B1B2514C95A007FDFB3 /* FirebaseABTesting.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AF22514C949007FDFB3 /* FirebaseABTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713B1C2514C95C007FDFB3 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AF82514C949007FDFB3 /* FirebaseAnalytics.framework */; };
+		F3713B202514C961007FDFB3 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AF02514C949007FDFB3 /* FirebaseAuth.framework */; };
+		F3713B212514C962007FDFB3 /* FirebaseAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AF02514C949007FDFB3 /* FirebaseAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713B222514C963007FDFB3 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713B012514C94A007FDFB3 /* FirebaseCore.framework */; };
+		F3713B232514C963007FDFB3 /* FirebaseCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713B012514C94A007FDFB3 /* FirebaseCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713B262514C969007FDFB3 /* FirebaseCrashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AFA2514C949007FDFB3 /* FirebaseCrashlytics.framework */; };
+		F3713B272514C969007FDFB3 /* FirebaseCrashlytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AFA2514C949007FDFB3 /* FirebaseCrashlytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713B282514C96B007FDFB3 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713B002514C94A007FDFB3 /* FirebaseDatabase.framework */; };
+		F3713B292514C96B007FDFB3 /* FirebaseDatabase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713B002514C94A007FDFB3 /* FirebaseDatabase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3713B422514C984007FDFB3 /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AFF2514C94A007FDFB3 /* FirebaseStorage.framework */; };
+		F3713B432514C985007FDFB3 /* FirebaseStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3713AFF2514C94A007FDFB3 /* FirebaseStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F349C8592513504B00A7BC42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F349C83A2513504700A7BC42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F349C8412513504700A7BC42;
+			remoteInfo = ChartageDemo;
+		};
+		F349C8642513504B00A7BC42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F349C83A2513504700A7BC42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F349C8412513504700A7BC42;
+			remoteInfo = ChartageDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3713A312514545C007FDFB3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F3713A4225145784007FDFB3 /* SDWebImageMapKit.framework in Embed Frameworks */,
+				F3713B272514C969007FDFB3 /* FirebaseCrashlytics.framework in Embed Frameworks */,
+				F3713AC92514BA73007FDFB3 /* EasyTipView.framework in Embed Frameworks */,
+				F3713B292514C96B007FDFB3 /* FirebaseDatabase.framework in Embed Frameworks */,
+				F3713AB82514B2B5007FDFB3 /* ZendeskCoreSDK.framework in Embed Frameworks */,
+				F3713A6C25148C30007FDFB3 /* NVActivityIndicatorView.framework in Embed Frameworks */,
+				F3713A982514AA4B007FDFB3 /* SwiftyJSON.framework in Embed Frameworks */,
+				F3713A7425149173007FDFB3 /* SwiftSoup.framework in Embed Frameworks */,
+				F3713A562514648C007FDFB3 /* IBAnimatable.framework in Embed Frameworks */,
+				F3713B192514C958007FDFB3 /* Firebase.framework in Embed Frameworks */,
+				F3713A7A251493AC007FDFB3 /* TagListView.framework in Embed Frameworks */,
+				F3713AB42514B2A2007FDFB3 /* SupportProvidersSDK.framework in Embed Frameworks */,
+				F3713AAC2514B24D007FDFB3 /* CommonUISDK.framework in Embed Frameworks */,
+				F3713AE92514C178007FDFB3 /* FBSDKLoginKit.framework in Embed Frameworks */,
+				F3713AE32514C172007FDFB3 /* FacebookShare.framework in Embed Frameworks */,
+				F3713AEB2514C17B007FDFB3 /* FBSDKShareKit.framework in Embed Frameworks */,
+				F3713A5225146324007FDFB3 /* Kingfisher.framework in Embed Frameworks */,
+				F3713B432514C985007FDFB3 /* FirebaseStorage.framework in Embed Frameworks */,
+				F3713A662514881F007FDFB3 /* KRPullLoader.framework in Embed Frameworks */,
+				F3713ACD2514BDAE007FDFB3 /* CleverTapSDK.framework in Embed Frameworks */,
+				F3713A4625145A20007FDFB3 /* PromiseKit.framework in Embed Frameworks */,
+				F3713AB02514B257007FDFB3 /* MessagingSDK.framework in Embed Frameworks */,
+				F3713AC52514B9D3007FDFB3 /* CountryPicker.framework in Embed Frameworks */,
+				F3713AB22514B26D007FDFB3 /* SDKConfigurations.framework in Embed Frameworks */,
+				F3713A4A25145B27007FDFB3 /* OmiseSDK.framework in Embed Frameworks */,
+				F3713ABD2514B483007FDFB3 /* Bolts.framework in Embed Frameworks */,
+				F3713A392514547B007FDFB3 /* SDWebImage.framework in Embed Frameworks */,
+				F3713A8C2514A226007FDFB3 /* DrawerView.framework in Embed Frameworks */,
+				F3713B1B2514C95A007FDFB3 /* FirebaseABTesting.framework in Embed Frameworks */,
+				F3713ADF2514C16D007FDFB3 /* FacebookCore.framework in Embed Frameworks */,
+				F3713AE12514C16F007FDFB3 /* FacebookLogin.framework in Embed Frameworks */,
+				F3713A302514545C007FDFB3 /* IQKeyboardManager.framework in Embed Frameworks */,
+				F3713AE52514C174007FDFB3 /* FBSDKCoreKit.framework in Embed Frameworks */,
+				F3713AAE2514B255007FDFB3 /* MessagingAPI.framework in Embed Frameworks */,
+				F3713A8625149E1E007FDFB3 /* TTRangeSlider.framework in Embed Frameworks */,
+				F3713A62251468F4007FDFB3 /* Cosmos.framework in Embed Frameworks */,
+				F3713A4E25146127007FDFB3 /* ObjectMapper.framework in Embed Frameworks */,
+				F3713B232514C963007FDFB3 /* FirebaseCore.framework in Embed Frameworks */,
+				F3713AE72514C176007FDFB3 /* FBSDKPlacesKit.framework in Embed Frameworks */,
+				F3713A9C2514AE1A007FDFB3 /* SwiftKeychainWrapper.framework in Embed Frameworks */,
+				F3713A7E251496A7007FDFB3 /* FSCalendar.framework in Embed Frameworks */,
+				F3713B212514C962007FDFB3 /* FirebaseAuth.framework in Embed Frameworks */,
+				F3713AC12514B783007FDFB3 /* Presentr.framework in Embed Frameworks */,
+				F3713AB62514B2A9007FDFB3 /* SupportSDK.framework in Embed Frameworks */,
+				F3713A7025148CBD007FDFB3 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F349C8422513504700A7BC42 /* ChartageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F349C8452513504700A7BC42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F349C84B2513504B00A7BC42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F349C84E2513504B00A7BC42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F349C8512513504B00A7BC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F349C8532513504B00A7BC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F349C8582513504B00A7BC42 /* ChartageDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChartageDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F349C85C2513504B00A7BC42 /* ChartageDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartageDemoTests.swift; sourceTree = "<group>"; };
+		F349C85E2513504B00A7BC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F349C8632513504B00A7BC42 /* ChartageDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChartageDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F349C8672513504B00A7BC42 /* ChartageDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartageDemoUITests.swift; sourceTree = "<group>"; };
+		F349C8692513504B00A7BC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3713A2D25145458007FDFB3 /* IQKeyboardManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManager.framework; path = Carthage/Build/iOS/IQKeyboardManager.framework; sourceTree = SOURCE_ROOT; };
+		F3713A3225145468007FDFB3 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = SOURCE_ROOT; };
+		F3713A3625145477007FDFB3 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = SOURCE_ROOT; };
+		F3713A3A25145482007FDFB3 /* SDWebImageMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImageMapKit.framework; path = Carthage/Build/iOS/SDWebImageMapKit.framework; sourceTree = SOURCE_ROOT; };
+		F3713A3D251454F3007FDFB3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F3713A3F25145509007FDFB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3713A4325145A18007FDFB3 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = SOURCE_ROOT; };
+		F3713A4725145B1B007FDFB3 /* OmiseSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OmiseSDK.framework; path = Carthage/Build/iOS/OmiseSDK.framework; sourceTree = SOURCE_ROOT; };
+		F3713A4B25146121007FDFB3 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = SOURCE_ROOT; };
+		F3713A4F2514631A007FDFB3 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = SOURCE_ROOT; };
+		F3713A5325146484007FDFB3 /* IBAnimatable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBAnimatable.framework; path = Carthage/Build/iOS/IBAnimatable.framework; sourceTree = SOURCE_ROOT; };
+		F3713A5F251468EE007FDFB3 /* Cosmos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cosmos.framework; path = Carthage/Build/iOS/Cosmos.framework; sourceTree = SOURCE_ROOT; };
+		F3713A6325148818007FDFB3 /* KRPullLoader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KRPullLoader.framework; path = Carthage/Build/iOS/KRPullLoader.framework; sourceTree = SOURCE_ROOT; };
+		F3713A6725148C10007FDFB3 /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NVActivityIndicatorView.framework; path = Carthage/Build/iOS/NVActivityIndicatorView.framework; sourceTree = SOURCE_ROOT; };
+		F3713A712514916B007FDFB3 /* SwiftSoup.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSoup.framework; path = Carthage/Build/iOS/SwiftSoup.framework; sourceTree = SOURCE_ROOT; };
+		F3713A7525149214007FDFB3 /* ViewTwoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTwoController.swift; sourceTree = "<group>"; };
+		F3713A77251493A6007FDFB3 /* TagListView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TagListView.framework; path = Carthage/Build/iOS/TagListView.framework; sourceTree = SOURCE_ROOT; };
+		F3713A7B25149699007FDFB3 /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = Carthage/Build/iOS/FSCalendar.framework; sourceTree = SOURCE_ROOT; };
+		F3713A7F25149A51007FDFB3 /* AppsFlyerLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppsFlyerLib.framework; path = Carthage/Build/iOS/AppsFlyerLib.framework; sourceTree = SOURCE_ROOT; };
+		F3713A8325149E13007FDFB3 /* TTRangeSlider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TTRangeSlider.framework; path = Carthage/Build/iOS/TTRangeSlider.framework; sourceTree = SOURCE_ROOT; };
+		F3713A8725149EFD007FDFB3 /* ViewThreeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThreeController.swift; sourceTree = "<group>"; };
+		F3713A892514A21B007FDFB3 /* DrawerView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DrawerView.framework; path = Carthage/Build/iOS/DrawerView.framework; sourceTree = SOURCE_ROOT; };
+		F3713A952514AA47007FDFB3 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
+		F3713A992514AE10007FDFB3 /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftKeychainWrapper.framework; path = Carthage/Build/iOS/SwiftKeychainWrapper.framework; sourceTree = SOURCE_ROOT; };
+		F3713A9D2514B1CA007FDFB3 /* ZendeskCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZendeskCoreSDK.framework; path = Carthage/Build/iOS/ZendeskCoreSDK.framework; sourceTree = SOURCE_ROOT; };
+		F3713A9F2514B1DD007FDFB3 /* SupportProvidersSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SupportProvidersSDK.framework; path = Carthage/Build/iOS/SupportProvidersSDK.framework; sourceTree = SOURCE_ROOT; };
+		F3713AA12514B1E9007FDFB3 /* SupportSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SupportSDK.framework; path = Carthage/Build/iOS/SupportSDK.framework; sourceTree = SOURCE_ROOT; };
+		F3713AA32514B209007FDFB3 /* CommonUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonUISDK.framework; path = Carthage/Build/iOS/CommonUISDK.framework; sourceTree = SOURCE_ROOT; };
+		F3713AA52514B21C007FDFB3 /* MessagingSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessagingSDK.framework; path = Carthage/Build/iOS/MessagingSDK.framework; sourceTree = SOURCE_ROOT; };
+		F3713AA72514B22A007FDFB3 /* MessagingAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessagingAPI.framework; path = Carthage/Build/iOS/MessagingAPI.framework; sourceTree = SOURCE_ROOT; };
+		F3713AA92514B237007FDFB3 /* SDKConfigurations.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDKConfigurations.framework; path = Carthage/Build/iOS/SDKConfigurations.framework; sourceTree = SOURCE_ROOT; };
+		F3713ABA2514B475007FDFB3 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Carthage/Build/iOS/Bolts.framework; sourceTree = SOURCE_ROOT; };
+		F3713ABE2514B777007FDFB3 /* Presentr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Presentr.framework; path = Carthage/Build/iOS/Presentr.framework; sourceTree = SOURCE_ROOT; };
+		F3713AC22514B9BA007FDFB3 /* CountryPicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CountryPicker.framework; path = Carthage/Build/iOS/CountryPicker.framework; sourceTree = SOURCE_ROOT; };
+		F3713AC62514BA6A007FDFB3 /* EasyTipView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EasyTipView.framework; path = Carthage/Build/iOS/EasyTipView.framework; sourceTree = SOURCE_ROOT; };
+		F3713ACA2514BD9A007FDFB3 /* CleverTapSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CleverTapSDK.framework; path = Carthage/Build/iOS/CleverTapSDK.framework; sourceTree = SOURCE_ROOT; };
+		F3713ACE2514BDC0007FDFB3 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "Carthage/Checkouts/clevertap-ios-sdk/Vendors/SDWebImage.framework"; sourceTree = SOURCE_ROOT; };
+		F3713AD02514C163007FDFB3 /* FacebookLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookLogin.framework; path = Carthage/Build/iOS/FacebookLogin.framework; sourceTree = SOURCE_ROOT; };
+		F3713AD12514C163007FDFB3 /* FacebookCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookCore.framework; path = Carthage/Build/iOS/FacebookCore.framework; sourceTree = SOURCE_ROOT; };
+		F3713AD22514C163007FDFB3 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Carthage/Build/iOS/FBSDKShareKit.framework; sourceTree = SOURCE_ROOT; };
+		F3713AD32514C163007FDFB3 /* FacebookShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookShare.framework; path = Carthage/Build/iOS/FacebookShare.framework; sourceTree = SOURCE_ROOT; };
+		F3713AD42514C163007FDFB3 /* FBSDKPlacesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKPlacesKit.framework; path = Carthage/Build/iOS/FBSDKPlacesKit.framework; sourceTree = SOURCE_ROOT; };
+		F3713AD52514C163007FDFB3 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = SOURCE_ROOT; };
+		F3713AD62514C163007FDFB3 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Carthage/Build/iOS/FBSDKLoginKit.framework; sourceTree = SOURCE_ROOT; };
+		F3713AF02514C949007FDFB3 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Carthage/Build/iOS/FirebaseAuth.framework; sourceTree = SOURCE_ROOT; };
+		F3713AF22514C949007FDFB3 /* FirebaseABTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseABTesting.framework; path = Carthage/Build/iOS/FirebaseABTesting.framework; sourceTree = SOURCE_ROOT; };
+		F3713AF32514C949007FDFB3 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Carthage/Build/iOS/Firebase.framework; sourceTree = SOURCE_ROOT; };
+		F3713AF82514C949007FDFB3 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Carthage/Build/iOS/FirebaseAnalytics.framework; sourceTree = SOURCE_ROOT; };
+		F3713AFA2514C949007FDFB3 /* FirebaseCrashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCrashlytics.framework; path = Carthage/Build/iOS/FirebaseCrashlytics.framework; sourceTree = SOURCE_ROOT; };
+		F3713AFF2514C94A007FDFB3 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Carthage/Build/iOS/FirebaseStorage.framework; sourceTree = SOURCE_ROOT; };
+		F3713B002514C94A007FDFB3 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Carthage/Build/iOS/FirebaseDatabase.framework; sourceTree = SOURCE_ROOT; };
+		F3713B012514C94A007FDFB3 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Carthage/Build/iOS/FirebaseCore.framework; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F349C83F2513504700A7BC42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3713A4125145784007FDFB3 /* SDWebImageMapKit.framework in Frameworks */,
+				F3713A552514648C007FDFB3 /* IBAnimatable.framework in Frameworks */,
+				F3713A972514AA4B007FDFB3 /* SwiftyJSON.framework in Frameworks */,
+				F3713B182514C957007FDFB3 /* Firebase.framework in Frameworks */,
+				F3713AC82514BA73007FDFB3 /* EasyTipView.framework in Frameworks */,
+				F3713A8B2514A226007FDFB3 /* DrawerView.framework in Frameworks */,
+				F3713AE42514C174007FDFB3 /* FBSDKCoreKit.framework in Frameworks */,
+				F3713AE62514C176007FDFB3 /* FBSDKPlacesKit.framework in Frameworks */,
+				F3713AB72514B2B5007FDFB3 /* ZendeskCoreSDK.framework in Frameworks */,
+				F3713B222514C963007FDFB3 /* FirebaseCore.framework in Frameworks */,
+				F3713AB12514B26D007FDFB3 /* SDKConfigurations.framework in Frameworks */,
+				F3713A7325149173007FDFB3 /* SwiftSoup.framework in Frameworks */,
+				F3713AE22514C172007FDFB3 /* FacebookShare.framework in Frameworks */,
+				F3713A6B25148C30007FDFB3 /* NVActivityIndicatorView.framework in Frameworks */,
+				F3713A79251493AC007FDFB3 /* TagListView.framework in Frameworks */,
+				F3713A5125146324007FDFB3 /* Kingfisher.framework in Frameworks */,
+				F3713A652514881F007FDFB3 /* KRPullLoader.framework in Frameworks */,
+				F3713A4525145A20007FDFB3 /* PromiseKit.framework in Frameworks */,
+				F3713A4925145B27007FDFB3 /* OmiseSDK.framework in Frameworks */,
+				F3713A382514547B007FDFB3 /* SDWebImage.framework in Frameworks */,
+				F3713A2F2514545C007FDFB3 /* IQKeyboardManager.framework in Frameworks */,
+				F3713AC42514B9D3007FDFB3 /* CountryPicker.framework in Frameworks */,
+				F3713A61251468F4007FDFB3 /* Cosmos.framework in Frameworks */,
+				F3713B262514C969007FDFB3 /* FirebaseCrashlytics.framework in Frameworks */,
+				F3713A4D25146127007FDFB3 /* ObjectMapper.framework in Frameworks */,
+				F3713AE82514C178007FDFB3 /* FBSDKLoginKit.framework in Frameworks */,
+				F3713ACF2514BDC1007FDFB3 /* SDWebImage.framework in Frameworks */,
+				F3713AAB2514B24D007FDFB3 /* CommonUISDK.framework in Frameworks */,
+				F3713A7D251496A7007FDFB3 /* FSCalendar.framework in Frameworks */,
+				F3713AC02514B783007FDFB3 /* Presentr.framework in Frameworks */,
+				F3713B422514C984007FDFB3 /* FirebaseStorage.framework in Frameworks */,
+				F3713A9B2514AE1A007FDFB3 /* SwiftKeychainWrapper.framework in Frameworks */,
+				F3713A6F25148CBD007FDFB3 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				F3713A8525149E1E007FDFB3 /* TTRangeSlider.framework in Frameworks */,
+				F3713ADE2514C16D007FDFB3 /* FacebookCore.framework in Frameworks */,
+				F3713B1C2514C95C007FDFB3 /* FirebaseAnalytics.framework in Frameworks */,
+				F3713AAF2514B257007FDFB3 /* MessagingSDK.framework in Frameworks */,
+				F3713B282514C96B007FDFB3 /* FirebaseDatabase.framework in Frameworks */,
+				F3713B202514C961007FDFB3 /* FirebaseAuth.framework in Frameworks */,
+				F3713AEA2514C17B007FDFB3 /* FBSDKShareKit.framework in Frameworks */,
+				F3713ACC2514BDAE007FDFB3 /* CleverTapSDK.framework in Frameworks */,
+				F3713AB52514B2A9007FDFB3 /* SupportSDK.framework in Frameworks */,
+				F3713AB32514B2A2007FDFB3 /* SupportProvidersSDK.framework in Frameworks */,
+				F3713A8125149A59007FDFB3 /* AppsFlyerLib.framework in Frameworks */,
+				F3713AAD2514B255007FDFB3 /* MessagingAPI.framework in Frameworks */,
+				F3713AE02514C16F007FDFB3 /* FacebookLogin.framework in Frameworks */,
+				F3713ABC2514B483007FDFB3 /* Bolts.framework in Frameworks */,
+				F3713B1A2514C95A007FDFB3 /* FirebaseABTesting.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F349C8552513504B00A7BC42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F349C8602513504B00A7BC42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F349C8392513504700A7BC42 = {
+			isa = PBXGroup;
+			children = (
+				F3713A2C25145447007FDFB3 /* Framework */,
+				F349C8442513504700A7BC42 /* ChartageDemo */,
+				F349C85B2513504B00A7BC42 /* ChartageDemoTests */,
+				F349C8662513504B00A7BC42 /* ChartageDemoUITests */,
+				F349C8432513504700A7BC42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F349C8432513504700A7BC42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F349C8422513504700A7BC42 /* ChartageDemo.app */,
+				F349C8582513504B00A7BC42 /* ChartageDemoTests.xctest */,
+				F349C8632513504B00A7BC42 /* ChartageDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F349C8442513504700A7BC42 /* ChartageDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F3713A3C251454E2007FDFB3 /* Main */,
+				F349C8452513504700A7BC42 /* AppDelegate.swift */,
+				F349C84B2513504B00A7BC42 /* Assets.xcassets */,
+				F349C8502513504B00A7BC42 /* LaunchScreen.storyboard */,
+				F349C8532513504B00A7BC42 /* Info.plist */,
+				F349C84D2513504B00A7BC42 /* Preview Content */,
+			);
+			path = ChartageDemo;
+			sourceTree = "<group>";
+		};
+		F349C84D2513504B00A7BC42 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F349C84E2513504B00A7BC42 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F349C85B2513504B00A7BC42 /* ChartageDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F349C85C2513504B00A7BC42 /* ChartageDemoTests.swift */,
+				F349C85E2513504B00A7BC42 /* Info.plist */,
+			);
+			path = ChartageDemoTests;
+			sourceTree = "<group>";
+		};
+		F349C8662513504B00A7BC42 /* ChartageDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F349C8672513504B00A7BC42 /* ChartageDemoUITests.swift */,
+				F349C8692513504B00A7BC42 /* Info.plist */,
+			);
+			path = ChartageDemoUITests;
+			sourceTree = "<group>";
+		};
+		F3713A2C25145447007FDFB3 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				F3713AF32514C949007FDFB3 /* Firebase.framework */,
+				F3713AF22514C949007FDFB3 /* FirebaseABTesting.framework */,
+				F3713AF82514C949007FDFB3 /* FirebaseAnalytics.framework */,
+				F3713AF02514C949007FDFB3 /* FirebaseAuth.framework */,
+				F3713B012514C94A007FDFB3 /* FirebaseCore.framework */,
+				F3713AFA2514C949007FDFB3 /* FirebaseCrashlytics.framework */,
+				F3713B002514C94A007FDFB3 /* FirebaseDatabase.framework */,
+				F3713AFF2514C94A007FDFB3 /* FirebaseStorage.framework */,
+				F3713AD12514C163007FDFB3 /* FacebookCore.framework */,
+				F3713AD02514C163007FDFB3 /* FacebookLogin.framework */,
+				F3713AD32514C163007FDFB3 /* FacebookShare.framework */,
+				F3713AD52514C163007FDFB3 /* FBSDKCoreKit.framework */,
+				F3713AD62514C163007FDFB3 /* FBSDKLoginKit.framework */,
+				F3713AD42514C163007FDFB3 /* FBSDKPlacesKit.framework */,
+				F3713AD22514C163007FDFB3 /* FBSDKShareKit.framework */,
+				F3713ACE2514BDC0007FDFB3 /* SDWebImage.framework */,
+				F3713ACA2514BD9A007FDFB3 /* CleverTapSDK.framework */,
+				F3713AC62514BA6A007FDFB3 /* EasyTipView.framework */,
+				F3713AC22514B9BA007FDFB3 /* CountryPicker.framework */,
+				F3713ABE2514B777007FDFB3 /* Presentr.framework */,
+				F3713ABA2514B475007FDFB3 /* Bolts.framework */,
+				F3713AA92514B237007FDFB3 /* SDKConfigurations.framework */,
+				F3713AA72514B22A007FDFB3 /* MessagingAPI.framework */,
+				F3713AA52514B21C007FDFB3 /* MessagingSDK.framework */,
+				F3713AA32514B209007FDFB3 /* CommonUISDK.framework */,
+				F3713AA12514B1E9007FDFB3 /* SupportSDK.framework */,
+				F3713A9F2514B1DD007FDFB3 /* SupportProvidersSDK.framework */,
+				F3713A9D2514B1CA007FDFB3 /* ZendeskCoreSDK.framework */,
+				F3713A992514AE10007FDFB3 /* SwiftKeychainWrapper.framework */,
+				F3713A952514AA47007FDFB3 /* SwiftyJSON.framework */,
+				F3713A892514A21B007FDFB3 /* DrawerView.framework */,
+				F3713A8325149E13007FDFB3 /* TTRangeSlider.framework */,
+				F3713A7F25149A51007FDFB3 /* AppsFlyerLib.framework */,
+				F3713A7B25149699007FDFB3 /* FSCalendar.framework */,
+				F3713A77251493A6007FDFB3 /* TagListView.framework */,
+				F3713A712514916B007FDFB3 /* SwiftSoup.framework */,
+				F3713A6725148C10007FDFB3 /* NVActivityIndicatorView.framework */,
+				F3713A6325148818007FDFB3 /* KRPullLoader.framework */,
+				F3713A5F251468EE007FDFB3 /* Cosmos.framework */,
+				F3713A5325146484007FDFB3 /* IBAnimatable.framework */,
+				F3713A4F2514631A007FDFB3 /* Kingfisher.framework */,
+				F3713A4B25146121007FDFB3 /* ObjectMapper.framework */,
+				F3713A4725145B1B007FDFB3 /* OmiseSDK.framework */,
+				F3713A4325145A18007FDFB3 /* PromiseKit.framework */,
+				F3713A3A25145482007FDFB3 /* SDWebImageMapKit.framework */,
+				F3713A3625145477007FDFB3 /* SDWebImage.framework */,
+				F3713A3225145468007FDFB3 /* IQKeyboardManagerSwift.framework */,
+				F3713A2D25145458007FDFB3 /* IQKeyboardManager.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		F3713A3C251454E2007FDFB3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F3713A3D251454F3007FDFB3 /* Main.storyboard */,
+				F3713A3F25145509007FDFB3 /* ViewController.swift */,
+				F3713A7525149214007FDFB3 /* ViewTwoController.swift */,
+				F3713A8725149EFD007FDFB3 /* ViewThreeController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F349C8412513504700A7BC42 /* ChartageDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F349C86C2513504B00A7BC42 /* Build configuration list for PBXNativeTarget "ChartageDemo" */;
+			buildPhases = (
+				F349C83E2513504700A7BC42 /* Sources */,
+				F349C83F2513504700A7BC42 /* Frameworks */,
+				F349C8402513504700A7BC42 /* Resources */,
+				F3713A312514545C007FDFB3 /* Embed Frameworks */,
+				F3713AB92514B307007FDFB3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChartageDemo;
+			productName = ChartageDemo;
+			productReference = F349C8422513504700A7BC42 /* ChartageDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F349C8572513504B00A7BC42 /* ChartageDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F349C86F2513504B00A7BC42 /* Build configuration list for PBXNativeTarget "ChartageDemoTests" */;
+			buildPhases = (
+				F349C8542513504B00A7BC42 /* Sources */,
+				F349C8552513504B00A7BC42 /* Frameworks */,
+				F349C8562513504B00A7BC42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F349C85A2513504B00A7BC42 /* PBXTargetDependency */,
+			);
+			name = ChartageDemoTests;
+			productName = ChartageDemoTests;
+			productReference = F349C8582513504B00A7BC42 /* ChartageDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F349C8622513504B00A7BC42 /* ChartageDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F349C8722513504B00A7BC42 /* Build configuration list for PBXNativeTarget "ChartageDemoUITests" */;
+			buildPhases = (
+				F349C85F2513504B00A7BC42 /* Sources */,
+				F349C8602513504B00A7BC42 /* Frameworks */,
+				F349C8612513504B00A7BC42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F349C8652513504B00A7BC42 /* PBXTargetDependency */,
+			);
+			name = ChartageDemoUITests;
+			productName = ChartageDemoUITests;
+			productReference = F349C8632513504B00A7BC42 /* ChartageDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F349C83A2513504700A7BC42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "ahmad shiddiq";
+				TargetAttributes = {
+					F349C8412513504700A7BC42 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					F349C8572513504B00A7BC42 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = F349C8412513504700A7BC42;
+					};
+					F349C8622513504B00A7BC42 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = F349C8412513504700A7BC42;
+					};
+				};
+			};
+			buildConfigurationList = F349C83D2513504700A7BC42 /* Build configuration list for PBXProject "ChartageDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F349C8392513504700A7BC42;
+			productRefGroup = F349C8432513504700A7BC42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F349C8412513504700A7BC42 /* ChartageDemo */,
+				F349C8572513504B00A7BC42 /* ChartageDemoTests */,
+				F349C8622513504B00A7BC42 /* ChartageDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F349C8402513504700A7BC42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F349C8522513504B00A7BC42 /* LaunchScreen.storyboard in Resources */,
+				F349C84F2513504B00A7BC42 /* Preview Assets.xcassets in Resources */,
+				F349C84C2513504B00A7BC42 /* Assets.xcassets in Resources */,
+				F3713A3E251454F3007FDFB3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F349C8562513504B00A7BC42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F349C8612513504B00A7BC42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F3713AB92514B307007FDFB3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/SupportSDK.framework/strip-frameworks.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F349C83E2513504700A7BC42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3713A7625149214007FDFB3 /* ViewTwoController.swift in Sources */,
+				F349C8462513504700A7BC42 /* AppDelegate.swift in Sources */,
+				F3713A4025145509007FDFB3 /* ViewController.swift in Sources */,
+				F3713A8825149EFD007FDFB3 /* ViewThreeController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F349C8542513504B00A7BC42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F349C85D2513504B00A7BC42 /* ChartageDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F349C85F2513504B00A7BC42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F349C8682513504B00A7BC42 /* ChartageDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F349C85A2513504B00A7BC42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F349C8412513504700A7BC42 /* ChartageDemo */;
+			targetProxy = F349C8592513504B00A7BC42 /* PBXContainerItemProxy */;
+		};
+		F349C8652513504B00A7BC42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F349C8412513504700A7BC42 /* ChartageDemo */;
+			targetProxy = F349C8642513504B00A7BC42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F349C8502513504B00A7BC42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F349C8512513504B00A7BC42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F349C86A2513504B00A7BC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F349C86B2513504B00A7BC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F349C86D2513504B00A7BC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ChartageDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = ZX9XPCSA65;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/clevertap-ios-sdk/Vendors",
+				);
+				INFOPLIST_FILE = ChartageDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = UnitTestExample.ChartageDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F349C86E2513504B00A7BC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ChartageDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = ZX9XPCSA65;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/clevertap-ios-sdk/Vendors",
+				);
+				INFOPLIST_FILE = ChartageDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = UnitTestExample.ChartageDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F349C8702513504B00A7BC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZX9XPCSA65;
+				INFOPLIST_FILE = ChartageDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = UnitTestExample.ChartageDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChartageDemo.app/ChartageDemo";
+			};
+			name = Debug;
+		};
+		F349C8712513504B00A7BC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZX9XPCSA65;
+				INFOPLIST_FILE = ChartageDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = UnitTestExample.ChartageDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChartageDemo.app/ChartageDemo";
+			};
+			name = Release;
+		};
+		F349C8732513504B00A7BC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZX9XPCSA65;
+				INFOPLIST_FILE = ChartageDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = UnitTestExample.ChartageDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChartageDemo;
+			};
+			name = Debug;
+		};
+		F349C8742513504B00A7BC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZX9XPCSA65;
+				INFOPLIST_FILE = ChartageDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = UnitTestExample.ChartageDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChartageDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F349C83D2513504700A7BC42 /* Build configuration list for PBXProject "ChartageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F349C86A2513504B00A7BC42 /* Debug */,
+				F349C86B2513504B00A7BC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F349C86C2513504B00A7BC42 /* Build configuration list for PBXNativeTarget "ChartageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F349C86D2513504B00A7BC42 /* Debug */,
+				F349C86E2513504B00A7BC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F349C86F2513504B00A7BC42 /* Build configuration list for PBXNativeTarget "ChartageDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F349C8702513504B00A7BC42 /* Debug */,
+				F349C8712513504B00A7BC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F349C8722513504B00A7BC42 /* Build configuration list for PBXNativeTarget "ChartageDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F349C8732513504B00A7BC42 /* Debug */,
+				F349C8742513504B00A7BC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F349C83A2513504700A7BC42 /* Project object */;
+}

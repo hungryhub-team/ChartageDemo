@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "6.32.0",
+  "iOS" : [
+    {
+      "name" : "FirebaseAppDistribution",
+      "hash" : "4a96ea3af5d93678d766e7da8c2127c826074dc2a03468ccc9ba26aeade86438",
+      "linking" : "dynamic"
+    }
+  ]
+}

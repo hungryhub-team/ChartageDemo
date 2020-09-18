@@ -1,0 +1,11 @@
+{
+  "commitish" : "1.4.1",
+  "iOS" : [
+    {
+      "hash" : "7d95991b4c018548c6bd63e84174f6acf4d8b6d337663b12fdc237933b9ac804",
+      "name" : "TagListView",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ]
+}
