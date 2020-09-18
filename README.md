@@ -1,16 +1,16 @@
-CARTHAGE DEMO
+# CARTHAGE DEMO
 
-/** OPEN PROJECT with CARTHAGE */
+# OPEN PROJECT with CARTHAGE
 cd ChartageDemo
 open ChartageDemo.xcodeproj
 
-/** How to add Carthage in Project */
+# How to add Carthage in Project
 - brew install Carthage //dont forget
 - carthage --version //check Carthage version
 - create file Cartfile inside project
 - open Cartfile
 
-/** How to add Framework Project with Carthage */
+# How to add Framework Project with Carthage
 - touch Cartfile
 - write Library in Cartfile
 - carthage update //if you waht to install all device iOS, MAC TV , WATCH
@@ -24,11 +24,11 @@ not use if Dependency *** has no shared framework schemes for any of the platfor
 - rm -rf ~/Library/Caches/org.carthage.CarthageKit
 //if you want to clean cache history installing library with carthage
 
-/** Type of add Library in Cartfile */
+# Type of add Library in Cartfile
 - github "facebook/Facebook-SDK-Swift"
 - binary "https://raw.githubusercontent.com/AppsFlyerSDK/AppsFlyerFramework/master/Carthage/appsflyer-ios.json"
 
-/** Hungryhub Library Support in Carthage  */
+# Hungryhub Library Support in Carthage
 github "michaelhenry/ImageViewer.swift" ~> 3.2
 github "hackiftekhar/IQKeyboardManager" ~> 6.5.4
 github "mxcl/PromiseKit" ~> 6.12.0
@@ -54,27 +54,27 @@ github "teodorpatras/EasyTipView" ~> 2.0.4
 github "CleverTap/clevertap-ios-sdk"
 github "facebook/Facebook-SDK-Swift"
 
-# Core layer framework
+/** Core layer framework */
 binary "https://zendesk.jfrog.io/zendesk/libs-releases-local/ios/zendesk/ZendeskCoreSDK/ZendeskCoreSDK.json" == 2.3.0
 
-# Support SDK
+/** Support SDK */
 binary "https://zendesk.jfrog.io/zendesk/libs-releases-local/ios/zendesk/SupportSDK/SupportSDK.json" == 5.0.5
 binary "https://zendesk.jfrog.io/zendesk/libs-releases-local/ios/zendesk/SupportProvidersSDK/SupportProvidersSDK.json" == 5.0.5
 
-# Shared Zendesk UI frameworks
+/** Shared Zendesk UI frameworks */
 binary "https://zendesk.jfrog.io/zendesk/libs-releases-local/ios/zendesk/CommonUISDK/CommonUISDK.json" == 5.0.0
 binary "https://zendesk.jfrog.io/zendesk/libs-releases-local/ios/zendesk/MessagingSDK/MessagingSDK.json" == 3.6.0
 binary "https://zendesk.jfrog.io/zendesk/libs-releases-local/ios/zendesk/MessagingAPI/MessagingAPI.json" == 3.6.0
 binary "https://zendesk.jfrog.io/zendesk/libs-releases-local/ios/zendesk/SDKConfigurations/SDKConfigurations.json" == 1.1.5
 
-# AppFlayer framework
+/** AppFlayer framework */
 binary "https://raw.githubusercontent.com/AppsFlyerSDK/AppsFlyerFramework/master/Carthage/appsflyer-ios.json"
 
-# Google Maps
+/** Google Maps */
 binary "https://dl.google.com/geosdk/GoogleMaps.json" ~> 3.10.0
 binary "https://dl.google.com/geosdk/GooglePlaces.json" ~> 3.10.0
 
-# Firebase
+/** Firebase */
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseABTestingBinary.json"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAdMobBinary.json"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json"
@@ -95,7 +95,7 @@ binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseProtobufBinary.js
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseRemoteConfigBinary.json"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseStorageBinary.json"
 
-/** Hungryhub Library Not Support in Carthage  */
+# Hungryhub Library Not Support in Carthage
 - Japx -> (Dependency "Japx" has no shared framework schemes for any of the platforms: iOS)
 - EMAlertController -> (Dependency "EMAlertController" has no shared framework schemes)
 - Alerts-Pickers -> (Dependency "Alerts-Pickers" has no shared framework schemes for any of the platforms: iOS)
@@ -105,12 +105,12 @@ binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseStorageBinary.jso
 - Lightbox
 - DKImagePickerController
 
-/** Change Hungryhub Library with new Library in Carthage  */
+# Change Hungryhub Library with new Library in Carthage
 - github "AppsFlyerSDK/AppsFlyerFramework" ~> 6.0.3
-# New Model Library AppsFlyerFramework
+/** New Model Library AppsFlyerFramework */
 "https://raw.githubusercontent.com/AppsFlyerSDK/AppsFlyerFramework/master/Carthage/appsflyer-ios.json”
 - github "zendesk/support_sdk_ios" ~> 5.0.12.
-# New Model Library zendesk
+/** New Model Library zendesk */
 binary "https://zendesk.jfrog.io/zendesk/libs-releases-local/ios/zendesk/ZendeskCoreSDK/ZendeskCoreSDK.json" == 2.3.0
 binary "https://zendesk.jfrog.io/zendesk/libs-releases-local/ios/zendesk/SupportSDK/SupportSDK.json" == 5.0.5
 binary "https://zendesk.jfrog.io/zendesk/libs-releases-local/ios/zendesk/SupportProvidersSDK/SupportProvidersSDK.json" == 5.0.5
@@ -118,10 +118,10 @@ binary "https://zendesk.jfrog.io/zendesk/libs-releases-local/ios/zendesk/CommonU
 binary "https://zendesk.jfrog.io/zendesk/libs-releases-local/ios/zendesk/MessagingSDK/MessagingSDK.json" == 3.6.0
 binary "https://zendesk.jfrog.io/zendesk/libs-releases-local/ios/zendesk/MessagingAPI/MessagingAPI.json" == 3.6.0
 binary "https://zendesk.jfrog.io/zendesk/libs-releases-local/ios/zendesk/SDKConfigurations/SDKConfigurations.json" == 1.1.5
-# Just Input One Library in Facebook
+/** Just Input One Library in Facebook */
 github "facebook/Facebook-SDK-Swift"
 
 
 
 
-/** Good Luck */
+# Good Luck 😁
