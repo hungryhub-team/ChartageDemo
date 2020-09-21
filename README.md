@@ -1,4 +1,4 @@
-# CARTHAGE DEMO
+## CARTHAGE DEMO
 
 # OPEN PROJECT with CARTHAGE
 cd ChartageDemo
@@ -125,4 +125,4 @@ github "facebook/Facebook-SDK-Swift"
 
 
 
-# Good Luck 😁
+Good Luck 😁
