@@ -1,6 +1,6 @@
 ## CARTHAGE DEMO
 
-### OPEN PROJECT with CARTHAGE
+### Open Project with Carthage
 cd ChartageDemo
 open ChartageDemo.xcodeproj
 
