@@ -104,6 +104,7 @@ binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseStorageBinary.jso
 - GCCountryPicker" -> ( Dependency "GCCountryPicker" has no shared framework schemes for any of the platforms: iOS)
 - Lightbox
 - DKImagePickerController
+- CTNotificationService
 
 # Change Hungryhub Library with new Library in Carthage
 - github "AppsFlyerSDK/AppsFlyerFramework" ~> 6.0.3
